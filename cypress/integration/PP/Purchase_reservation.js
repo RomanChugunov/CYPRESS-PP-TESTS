@@ -1,19 +1,18 @@
-describe('purchase_reservation', function() {
+describe('Purchase_reservation', function() {
 
-	it('purchase reservation with default vehicle and 100% discount', function() {
-    cy.visit('https://spa.staging.premiumparking.com/')
+	it('Purchase reservation with default vehicle and 100% discount', function() {
 
+	const url = 'https://spa.release.premiumparking.com/'
+
+	cy.visit(url)
+	
   	cy.get('.react-autosuggest__input').type('P0123')
-
-  	cy.get('.CustomButton__StyledButton-nw07qb-0').click()
-
-  	cy.wait(1000)
 
   	cy.get('.CustomButton__StyledButton-nw07qb-0').click()
 
   	cy.get('[data-testid=test-reserve-parking-in-advance]').click()
 
-  	cy.get('.Button__StyledButton-sc-1b506hy-0').click()
+  	cy.get('[id=react-autowhatever-1--item-1"-sc-1b506hy-0]').click()
 
   	cy.get('.commonStyledComponents__TotalPriceWrapper-sc-10ukbq6-5 > :nth-child(2)').should('contain', '9.00')
 

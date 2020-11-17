@@ -1,28 +1,27 @@
+/// <reference types="Cypress" />
+
 describe('authorization', function() {
 
+	const url = 'https://premiumparking.com'
+	const email = 'roman.chugunov+a@flatstack.com'
+	const password = 'qqqwww'
 
-  it('sign in', function() {
-  	cy.visit('https://premiumparking.com')
 
-  	cy.get('[data-testid=test-signin]').click()
+	it('sign in', function() {
 
-    cy.wait(500)
+	// Login execution
+	cy.visit(url)
+	cy.get('[data-cy=test-signin]').click().as('Click_Sign_In')
+	cy.wait(200)
+	cy.get('[data-cy=test-email-input]').as('Email').type(email)
+	cy.get('[data-cy=submit-btn]').as('Confirm').click()
+  	cy.get('[data-cy="test-password-input"]').as('Password').type(password)
+	cy.get('@Confirm').click()
 
-  	cy.get('.styledComponents__StyledInput-sc-1x2xdjn-2').type("roman.chugunov@flatstack.com")
+	// Assertion that account screen opens
+	cy.url('pathname').should('contain', 'accounts')
 
-    cy.wait(500)
-
-  	cy.get('[data-testid=submit-btn]').click()
-
-  	cy.wait(500)
-
-  	cy.get('.styledComponents__StyledInput-sc-1x2xdjn-2').type('qqqwww')
-
-  	cy.get('[data-testid=submit-btn]').click()
-
-  	cy.get('.navbar-brand').click()
-
-  	cy.get('.NavDropdown__Email-sc-1ioc26k-3').should('contain', 'roman.chugunov@flatstack.com')
-  })
+	// Assertion taht email address is presented in the DOM
+  	cy.contains(email).should('be.visible')
+  });
 })	
-
