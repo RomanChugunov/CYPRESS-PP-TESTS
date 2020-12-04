@@ -1,1 +1,5 @@
-{}
+{
+    "baseUrl": "https://spa.release.premiumparking.com",
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 10000
+}
