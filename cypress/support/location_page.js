@@ -23,7 +23,7 @@ Cypress.Commands.add("pay_to_park_range", () => {
     return cy.get('[data-testid=test-input-range]',{timeout:10000});
 });
 
-Cypress.Commands.add("view_rate_button", () => {
+Cypress.Commands.add("session_view_rate_button", () => {
     return cy.get('[data-testid=test-session-form]',{timeout:10000}).contains('View rate');
 });
 
@@ -33,6 +33,22 @@ Cypress.Commands.add("range_rate_time", () => {
 
 Cypress.Commands.add("park_here_button", () => {
     return cy.get('[data-testid=test-total-form]',{timeout:10000}).contains('Park here');
+});
+
+Cypress.Commands.add("reservation_view_rate_button", () => {
+    return cy.get('[data-testid=test-reservation-form]',{timeout:10000}).contains('View rate');
+});
+
+Cypress.Commands.add("reservation_dates", () => {
+    return cy.get('[data-testid=test-reservation-form]',{timeout:10000}).find('input');
+});
+
+Cypress.Commands.add("reservation_start_date", () => {
+    cy.get('[data-testid=test-reservation-form]',{timeout:10000}).find('input').eq(0).invoke('val').then(val => {
+        const startname = val
+        cy.log(startname)
+        return startname
+    });
 });
 
 
