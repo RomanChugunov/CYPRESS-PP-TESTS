@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27ad4a1d-5c9b-4c20-823c-36f832a6decb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cypress/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/cypress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/PP/Purchase_session.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/PP/Purchase_session.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/PP/TEST_SESSION.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/PP/TEST_SESSION.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l3YsjxLqXmnqeqHk00Vai05s3o" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27ad4a1d-5c9b-4c20-823c-36f832a6decb" name="Default Changelist" comment="" />
+      <created>1606827454062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606827454062</updated>
+      <workItem from="1606827456795" duration="10052000" />
+      <workItem from="1606842534746" duration="7500000" />
+      <workItem from="1606917534692" duration="14681000" />
+      <workItem from="1607005554778" duration="950000" />
+      <workItem from="1607089502476" duration="4804000" />
+      <workItem from="1607523888382" duration="794000" />
+    </task>
+    <task id="LOCAL-00001" summary="stared to write tests with aliases">
+      <created>1606842599171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606842599171</updated>
+    </task>
+    <task id="LOCAL-00002" summary="completed first session purchase test, added alias libs for purchasing">
+      <created>1606917620021</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606917620021</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed reservation test &amp; added another one">
+      <created>1607094706917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607094706917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="stared to write tests with aliases" />
+    <MESSAGE value="completed first session purchase test, added alias libs for purchasing" />
+    <MESSAGE value="Fixed reservation test &amp; added another one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed reservation test &amp; added another one" />
+  </component>
+</project>

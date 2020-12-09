@@ -5,27 +5,30 @@ describe('purchase_session', function() {
 
   	cy.get('.react-autosuggest__input').type('P0123')
 
-  	cy.get('.CustomButton__StyledButton-nw07qb-0').click()
+  	cy.get('#react-autowhatever-1--item-0', { timeout: 10000 }).should('be.visible').click()
 
   	cy.wait(1000)
 
-  	cy.get('.CustomButton__StyledButton-nw07qb-0').click()
+  	cy.get('.CustomButton__StyledButton-nw07qb-0', { timeout: 10000 }).click()
 
-  	cy.get('[data-testid=test-pay-to-park-now]').click()
+  	cy.get('[data-testid=test-pay-to-park-now]', { timeout: 10000 }).click()
 
-  	cy.get('[data-testid=test-input-range]').click()
+  	cy.get('[data-testid=test-input-range]', { timeout: 10000 }).click()
 
-  	cy.get('.Button__StyledButton-sc-1b506hy-0').click()
+  	cy.get('.Button__StyledButton-sc-1b506hy-0', { timeout: 10000 }).click()
 
-  	cy.get('.commonStyledComponents__Form-sc-10ukbq6-0 > .ButtonedLink__StyledLink-sc-1vm1uho-0').click()
+  	cy.get('.commonStyledComponents__Form-sc-10ukbq6-0 > .ButtonedLink__StyledLink-sc-1vm1uho-0',{ timeout: 10000 }).click()
 
-    cy.get('.styledComponents__StyledInput-sc-1x2xdjn-2').type('roman.chugunov@flatstack.com')
 
-    cy.get('[data-testid=submit-btn]').click()
+    cy.wait(5000)
 
-    cy.wait(1000)
+    cy.get('.styledComponents__StyledInput-sc-1x2xdjn-2',{ timeout: 10000 }).type('roman.chugunov@flatstack.com')
 
-    cy.get('.styledComponents__StyledInput-sc-1x2xdjn-2').type('qqqaaa')
+    cy.get('[data-testid=submit-btn]',{ timeout: 10000 }).click()
+
+
+
+    cy.get('.styledComponents__StyledInput-sc-1x2xdjn-2', { timeout: 10000 }).type('qqqaaa')
 
     cy.get('[data-testid=submit-btn]').click()
 
